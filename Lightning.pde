@@ -24,7 +24,7 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-	filter(BLUR,6);
+	filter(BLUR,1);
 }
 
 void mousePressed()
