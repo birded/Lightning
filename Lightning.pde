@@ -3,13 +3,12 @@ int startY = 0;
 int endX = width/2;
 int endY = 0;
 int bg = 0;
-int thold = 0;
 
 void setup()
 {
   size(500,500);
   background(bg);
-  strokeWeight(4);
+  strokeWeight(3);
 }
 
 void draw()
@@ -24,7 +23,6 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-	filter(BLUR,1);
 }
 
 void mousePressed()
