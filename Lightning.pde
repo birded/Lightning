@@ -9,6 +9,11 @@ void setup()
   size(500,500);
   background(bg);
   strokeWeight(3);
+  fill(200,200,200,200);
+  noStroke();
+  ellipse(50,0,300,80);
+  ellipse(200,0,300,120);
+  ellipse(500,0,400,130);
 }
 
 void draw()
@@ -32,6 +37,11 @@ void mousePressed()
 
 void mouseReleased(){
 	background(0);
+	fill(200,200,200,200);
+	noStroke();
+	ellipse(50,0,300,80);
+	ellipse(200,0,300,120);
+	ellipse(500,0,400,130);
 	startX = mouseX;
 	startY = 0;
 	endX = mouseX;
