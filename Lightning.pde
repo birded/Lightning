@@ -18,6 +18,11 @@ void setup()
 
 void draw()
 {
+	drawClouds();
+
+	fill(0,0,0,10);
+	rect(0,0,500,500);
+
 	stroke((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
 	while(endY < height){
 		endY = startY + (int)(Math.random() * 9);
@@ -28,6 +33,16 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
+	
+	drawClouds();
+
+
+
+
+}
+
+void drawClouds(){
+
 	fill(200);
 	noStroke();
 	ellipse(50,0,300,80);
@@ -37,7 +52,8 @@ void draw()
 
 void mousePressed()
 {
-	background(180);
+	fill(255);
+	rect(0,0,500,500);
 }
 
 void mouseReleased(){
